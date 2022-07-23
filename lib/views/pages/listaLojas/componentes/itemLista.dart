@@ -12,7 +12,8 @@ class CardLista extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: const Color(0xffb455A64),
+      elevation: 90,
+      color: const Color(0xffbFFFFFF),
       child: Container(
         padding: const EdgeInsets.all(10),
         decoration: const BoxDecoration(

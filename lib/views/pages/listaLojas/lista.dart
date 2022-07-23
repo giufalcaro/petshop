@@ -57,11 +57,12 @@ class _listaWidgetState extends State<listaWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Teste"),
+        title: const Text("Lojas proximas a voce", style: TextStyle(color: Colors.white),),
         backgroundColor: const Color(0xffb009688),
       ),
       body: ListView.builder(
         itemCount: lojas.length,
+        padding: const EdgeInsets.all(3),
         itemBuilder: (context, index) {
           return CardLista(
             loja: lojas[index],
